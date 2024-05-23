@@ -1,3 +1,16 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+
+  "rules": {
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "off", // turn this to "warn" later
+    "@typescript-eslint/no-explicit-any": "off", // turn this to "warn" later
+    "prefer-const": "off", // turn this to "warn" later
+    "no-console": "warn",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": 0,
+    "react/no-unescaped-entities": 0,
+    "tailwindcss/no-custom-classname": "off",
+    "tailwindcss/classnames-order": "off" // It is offbecause it conflicts when prettier re-orders classes
+  }
 }
