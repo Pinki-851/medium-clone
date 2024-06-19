@@ -22,3 +22,6 @@ p:empty:not(:focus):before {
   content: attr(data-p-placeholder);
   opacity: 30%;
 }
+.medium-edtor-placeholder::after {
+  content: "" !important;
+}

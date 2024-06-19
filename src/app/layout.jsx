@@ -1,4 +1,3 @@
-import { Navbar } from "@/components/layout/navbar";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -15,10 +14,7 @@ export default function RootLayout({ children }) {
     <ClerkProvider>
       <html lang='en'>
         <body className={inter.className}>
-          <section className='w-full h-full'>
-            <Navbar />
-            {children}
-          </section>
+          <section className='w-full h-full'>{children}</section>
         </body>
       </html>
     </ClerkProvider>
